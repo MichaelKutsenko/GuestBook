@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS Users (
+  id         INT(11)     NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(32) NOT NULL,
+  lastt_name VARCHAR(32) NOT NULL,
+  bithdate   DATE NOT NULL,
+  phone      VARCHAR(32) NOT NULL,
+  email      VARCHAR(128) NOT NULL,
+  country    VARCHAR(32) NOT NULL,
+  city       VARCHAR(32) NOT NULL
+)ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
