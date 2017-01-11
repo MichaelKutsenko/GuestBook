@@ -7,12 +7,10 @@
     <meta charset="utf-8">
 </head>
 <body>
-<button onclick="history.back()">Back to Previous Page</button>
-<h1>404 Page Not Found.</h1>
-<br/>
+<p>hello! This is error page!!!</p>
+
 <p><b>Error code:</b> ${pageContext.errorData.statusCode}</p>
 <p><b>Error code:</b> ${pageContext.errorData}</p>
 <p><b>Request URI:</b> ${pageContext.request.scheme}://${header.host}${pageContext.errorData.requestURI}</p>
-<br/>
 </body>
 </html>

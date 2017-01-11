@@ -28,7 +28,7 @@
             <h3>Please fill in all fields:</h3>
         </header>
 
-        <form onsubmit="return checkForm(this)" action="/result" method="POST">
+        <form onsubmit="return checkForm(this)" action="result" method="POST">
             <span class="error">${message}</span>
             <div id="fields_container">
                 <div>

@@ -13,12 +13,14 @@ import java.util.*;
 import java.util.Date;
 
 public class AddServlet extends HttpServlet {
-//    static final String DB_CONNECTION = "jdbc:mysql://localhost:3306/mydb";
-    static final String DB_CONNECTION = "jdbc:mysql://gi6kn64hu98hy0b6.chr7pe7iynqr.eu-west-1.rds.amazonaws.com/wogkrtduick0q3la";
+    static final String DB_CONNECTION = "jdbc:mysql://localhost:3306/mydb";
+//    static final String DB_CONNECTION = "jdbc:mysql://gi6kn64hu98hy0b6.chr7pe7iynqr.eu-west-1.rds.amazonaws.com/wogkrtduick0q3la";
 
-//    static final String MYSQL_PATH = "jdbc:mysql://localhost:3306";
-    static final String DB_USER = "tevupndx9bm5zn59";
-    static final String DB_PASSWORD = "uzx1mz9sc4xwgb65";
+    static final String MYSQL_PATH = "jdbc:mysql://localhost:3306";
+//    static final String DB_USER = "tevupndx9bm5zn59";
+//    static final String DB_PASSWORD = "uzx1mz9sc4xwgb65";
+    static final String DB_USER = "root";
+    static final String DB_PASSWORD = "abc123";
 
     static Connection conn;
     static PreparedStatement preparedStatment;
@@ -148,8 +150,8 @@ public class AddServlet extends HttpServlet {
         } catch (SQLException | ClassNotFoundException | ArithmeticException e) {
             e.printStackTrace();
 
-            request.setAttribute("message", "ooops.. .something's wrong. try again later.");
-            request.getRequestDispatcher("/WEB-INF/pages/index.jsp").forward(request, response);
+//            request.setAttribute("message", "ooops.. .something's wrong. try again later.");
+//            request.getRequestDispatcher("/WEB-INF/pages/index.jsp").forward(request, response);
         }
     }
 
